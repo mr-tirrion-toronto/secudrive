@@ -1,0 +1,10 @@
+﻿build/
+dist/
+__pycache__/
+*.pyc
+_rt_smoke_watch/
+junk/
+scripts/SESSION_MEMORY.md
+rust_engine/target/
+*.db
+.env

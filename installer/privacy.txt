@@ -1,0 +1,32 @@
+SECUDRIVE PRIVACY NOTICE
+
+Short version: SecuDrive is a local security tool.  It does not sell your
+data and it does not send your scanned files anywhere.
+
+WHAT WE COLLECT
+- Locally: scan findings, quarantine records and an audit log are stored in a
+  local database (secudrive.db) and encrypted backups under your user profile.
+  Nothing from this database leaves your computer unless you choose to use a
+  signature feed of your own.
+- Online (optional): when you press "Update Signatures" and an online security
+  feed is configured, the Software downloads malware signature hashes from
+  that feed.  It does not upload your files or scan results.
+- Diagnostics: a local debug log (secudrive_debug.log) records GUI actions so
+  support issues can be diagnosed.  It stays on your machine.
+
+THIRD PARTIES
+- The Software has no built-in telemetry or advertising.  If you configure a
+  third-party signature feed, that feed's own privacy policy applies to your
+  connection to it.
+
+YOUR CHOICES
+- Automatic signature updates and scans can be disabled in the Dashboard.
+- Quarantined items can be restored or permanently deleted from the
+  Quarantine manager.
+- Uninstalling the Software (via the uninstaller) removes its data directory
+  unless you keep your encrypted backups deliberately.
+
+Contact: privacy@secudrive.example  (placeholder address)
+
+[This is a placeholder notice for development builds.  Replace with your own
+privacy policy before public distribution.]

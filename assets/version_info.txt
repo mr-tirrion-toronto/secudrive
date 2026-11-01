@@ -1,0 +1,38 @@
+# Windows version resource for SecuDrive.exe (consumed via EXE(version=...)).
+# Editing this fixes the "UNKNOWN PUBLISHER" / empty Company / Product info you
+# see in Windows Explorer's file properties and the User Account Control prompt.
+# (The publisher warning on an *unsigned* binary does NOT disappear from
+# metadata alone - that takes an Authenticode cert - see installer/SIGNING-NOTES.md.)
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 0, 0, 0),
+    prodvers=(1, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo(
+      [
+        StringTable(
+          '040904B0',
+          [
+            StringStruct('CompanyName', 'SecuDrive Software'),
+            StringStruct('FileDescription', 'SecuDrive - USB Security & Data Recovery'),
+            StringStruct('FileVersion', '1.0.0'),
+            StringStruct('InternalName', 'SecuDrive'),
+            StringStruct('LegalCopyright', 'Copyright (c) 2026 SecuDrive Software'),
+            StringStruct('OriginalFilename', 'SecuDrive.exe'),
+            StringStruct('ProductName', 'SecuDrive'),
+            StringStruct('ProductVersion', '1.0.0'),
+            StringStruct('Comments', 'Removable-drive threat scanner with encrypted, Zero-Data-Loss recovery.')
+          ]
+        )
+      ]
+    ),
+    VarFileInfo([VarStruct('Translation', [1033, 1200])])
+  ]
+)

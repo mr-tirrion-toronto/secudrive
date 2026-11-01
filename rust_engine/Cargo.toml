@@ -1,0 +1,28 @@
+[package]
+name = "secudrive_rust"
+version = "0.1.0"
+edition = "2021"
+description = "Compiled scan engine (walk + hash) for SecuDrive, exposed to Python via PyO3"
+license = "MIT"
+
+[lib]
+# PyO3 extension module (importable from Python). maturin builds the wheel.
+name = "secudrive_rust"
+crate-type = ["cdylib"]
+
+# maturin auto-enables the `extension-module` feature during wheel builds.
+[features]
+extension-module = ["pyo3/extension-module"]
+
+[dependencies]
+# Default features include the `macros` + `std` features we rely on.
+pyo3 = { version = "0.24", features = ["abi3-py39"] }
+walkdir = "2.5"
+rayon = "1.10"
+sha2 = "0.10"
+md-5 = "0.10"
+hex = "0.4"
+
+[target.'cfg(windows)'.dependencies]
+# Junction / reparse-point sniffing (Windows only)
+windows-sys = { version = "0.59", features = ["Win32_Storage_FileSystem"] }

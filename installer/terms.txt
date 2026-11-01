@@ -1,0 +1,48 @@
+SECUDRIVE END USER LICENSE AGREEMENT (TERMS)
+
+IMPORTANT - PLEASE READ CAREFULLY BEFORE INSTALLING OR USING SECUDRIVE.
+
+This End User License Agreement ("Agreement") is between you ("Licensee" or
+"you") and SecuDrive Software ("Licensor", "we", "us").  By installing, copying
+or using SecuDrive ("the Software") you agree to be bound by the terms below.
+If you do not agree, do not install or use the Software.
+
+1. LICENSE GRANT
+   We grant you a personal, non-exclusive, non-transferable, revocable license
+   to install and use the Software on your own computers for personal or
+   internal business use, subject to this Agreement.
+
+2. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.  THE ENTIRE RISK
+   ARISING OUT OF THE USE OR PERFORMANCE OF THE SOFTWARE REMAINS WITH YOU.
+
+3. LIMITATION OF LIABILITY
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY
+   INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR ANY
+   LOSS OF PROFITS, DATA, OR DATA RECOVERY COSTS, ARISING OUT OF OR RELATED TO
+   YOUR USE OF THE SOFTWARE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY
+   OF SUCH DAMAGES.  RECOVERY, DISINFECTION AND QUARANTINE ACTIONS ARE
+   PERFORMED AT YOUR OWN RISK.
+
+4. ZERO-DATA-LOSS RECOVERY
+   Where the Software disinfects or quarantines a file it first creates an
+   encrypted backup.  That backup is your protection against data loss; you
+   are responsible for monitoring its integrity.
+
+5. RESTRICTIONS
+   You may not reverse engineer, decompile, distribute, resell, sublicense or
+   lease the Software, except as expressly permitted by law.
+
+6. TERMINATION
+   This license is effective until terminated.  You may terminate by removing
+   the Software.  We may terminate this license if you breach any term.
+
+7. GOVERNING LAW
+   This Agreement is governed by the laws of your country of residence.
+
+Copyright (c) 2026 SecuDrive Software.  All rights reserved.
+
+[This is a placeholder agreement for use in development builds.  Replace with
+your own lawyer-approved EULA before public distribution.]

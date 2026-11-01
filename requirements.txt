@@ -1,0 +1,32 @@
+# secudrive - Desktop Security & Data Recovery Tool
+# Windows-first, Linux supported, macOS disabled.
+
+# Core: encrypted backups & quarantine blobs (AES128-CBC + HMAC via Fernet)
+cryptography>=41.0
+
+# ---- Phase 2: GUI (desktop) ----------------------------------------------
+PyQt6>=6.7
+
+# ---- Phase 2: real-time background USB detection --------------------------
+# RegisterDeviceNotification fast path (Windows).  Without it, the watcher
+# falls back to removable-volume polling, so this is truly optional.
+pywin32>=306 ; platform_system == "Windows"
+
+# ---- Linux: real-time protection + hotplug backends -----------------------
+# pyinotify: low-latency file watching for RealtimeMonitor (real-time tab).
+# pyudev:    device notification for the background watcher; without it the
+#            watcher falls back to polling.
+# Both ship in the Linux build so protection works out of the box; removal is
+# only for a "polling-only" slim build.
+pyinotify>=0.9.6 ; platform_system == "Linux"
+pyudev>=0.24 ; platform_system == "Linux"
+
+# ---- macOS ---------------------------------------------------------------
+# macOS support is DISABLED - SecuDrive is Windows + Linux only going
+# forward. No macOS-only dependencies are declared.
+
+# ---- Build (PyInstaller) ---------------------------------------------------
+pyinstaller>=6.8 ; platform_system == "Windows"
+
+# Phase 3 (optional, explicitly NOT installed by default):
+# Tauri (Rust) or a compiled scanner worker - out-of-band from pip.
