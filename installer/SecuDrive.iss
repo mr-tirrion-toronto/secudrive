@@ -11,7 +11,7 @@
 ; Without a certificate leave SignTool commented - the installer still works.
 
 #define MyAppName "SecuDrive"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "SecuDrive Software"
 #define MyAppExeName "SecuDrive.exe"
 #define MyAppId "{8C4A7E2E-5B43-4C1A-9E7D-3F2C9A1B6D40}"
@@ -22,9 +22,9 @@ AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
-AppPublisherURL=https://secudrive.example
-AppSupportURL=https://secudrive.example/support
-AppUpdatesURL=https://secudrive.example/update
+AppPublisherURL=https://tirrion.pages.dev/
+AppSupportURL=https://github.com/mr-tirrion-toronto/secudrive/issues
+AppUpdatesURL=https://github.com/mr-tirrion-toronto/secudrive/releases/latest
 DefaultDirName={autopf}\SecuDrive
 DefaultGroupName=SecuDrive
 DisableProgramGroupPage=yes
@@ -35,7 +35,7 @@ LicenseFile=terms.txt
 InfoBeforeFile=privacy.txt
 
 OutputDir=..\dist
-OutputBaseFilename=SecuDriveSetup
+OutputBaseFilename=SecuDrive_Setup
 SetupIconFile=..\assets\SecuDrive.ico
 UninstallDisplayIcon={app}\SecuDrive.exe
 Compression=lzma2
@@ -78,6 +78,5 @@ Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChang
 [UninstallRun]
 Filename: "{app}\{#MyAppExeName}"; Parameters: "--unregister-wsc"; RunOnceId: "SecuDriveWscUnreg"
 
-[UninstallDelete]
-Type: filesandordirs; Name: "{localappdata}\SecuDrive\quarantine"
-Type: filesandordirs; Name: "{localappdata}\SecuDrive\data\backup"
+; User quarantine and backup data is intentionally preserved on uninstall.
+

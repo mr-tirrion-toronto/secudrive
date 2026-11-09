@@ -7,5 +7,6 @@ Windows 11 (portable to Linux/macOS).  Core pipeline per destructive action:
     -> DISINFECT (strip payload, atomic replace) -> VERIFY -> ROLLBACK on failure.
 """
 
-__version__ = "0.1.0"
+__version__ = "1.0.1"
 __all__ = ["__version__"]
+
